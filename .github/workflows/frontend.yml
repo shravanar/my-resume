@@ -17,7 +17,8 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --overwrite --account-name shravanresume --auth-mode key -d '$web' -s ./frontend/*
+            cd frontend
+            az storage blob upload-batch --overwrite --account-name shravanresume --auth-mode key -d '$web' -s .
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
