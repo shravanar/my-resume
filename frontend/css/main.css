@@ -186,6 +186,10 @@ footer a:not(.nav-link) {
 .cover {
   border-radius: 10px; }
 
+.curved-border {
+  border-radius: 10px; 
+}
+
 .avatar {
   max-width: 250px;
   max-height: 250px;
