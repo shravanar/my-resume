@@ -21,6 +21,6 @@ public class Function {
                 HttpRequestMessage<Optional<String>> request,
             final ExecutionContext context) {
         context.getLogger().info("Java HTTP trigger processed a request.");
-        return request.createResponseBuilder(HttpStatus.OK).body("Hello World").build();
+        return request.createResponseBuilder(HttpStatus.OK).body("Hello World, How're you doing").build();
     }
 }
