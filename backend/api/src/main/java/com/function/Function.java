@@ -12,6 +12,7 @@ import com.microsoft.azure.functions.annotation.HttpTrigger;
 import java.util.Optional;
 
 public class Function {
+    
     @FunctionName("counter")
     public HttpResponseMessage run(
             @HttpTrigger(
